@@ -13,7 +13,7 @@ function mostrarComentarios(comentarios) {
   negativo.innerHTML = "";
 
   comentarios.forEach((comentario) => {
-    const li = document.createElement("li");
+    const li = document.createElement("p");
     li.textContent = comentario.comentario;
 
     if (comentario.positivo) {
