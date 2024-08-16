@@ -14,7 +14,7 @@
    </head>
    <body>
     <div class="container">
-        <div class="row pt-4">
+        <header class="row pt-4">
             <div class="col d-flex flex-column align-items-center">
                 <h1>Feedback de grupos</h1>
                 <small class="fs-6">Avalie sua equipe com qualidade e segurança!</small>
@@ -27,125 +27,130 @@
                     </div>
                 </form>
             </div>
-        </div>
-        <div class="row pt-5">
+        </header>
+        <main class="row py-5">
             <div class="col-3">
                 <div class="card">
-                    <img src="./assets/imgs/Perfil-sem-foto.webp" class="card-img-top" alt="...">
+                    <img src="./assets/imgs/Santos.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Pessoa</h5>
-                        <p class="card-text">Fulaninho de tal, tal setor.</p>
-                        <a href="#" class="btn btn-primary">Ver</a>
+                        <h5 class="card-title">Douglas Santos</h5>
+                        <p class="card-text">Desenvolvedor Full Stack.</p>
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#FeedbackModal"
+                        >
+                            Ver
+                        </button>
                     </div>
                   </div>
             </div>
             <div class="col-3">
                 <div class="card">
-                    <img src="./assets/imgs/Perfil-sem-foto.webp" class="card-img-top" alt="...">
+                    <img src="./assets/imgs/Mello.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Pessoa</h5>
-                        <p class="card-text">Fulaninho de tal, tal setor.</p>
-                        <a href="#" class="btn btn-primary">Ver</a>
+                        <h5 class="card-title">João Mello</h5>
+                        <p class="card-text">Desenvolvedor Full Stack</p>
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#FeedbackModal"
+                        >
+                            Ver
+                        </button>
                     </div>
                   </div>
             </div>
             <div class="col-3">
                 <div class="card">
-                    <img src="./assets/imgs/Perfil-sem-foto.webp" class="card-img-top" alt="...">
+                    <img src="./assets/imgs/Luna.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Pessoa</h5>
-                        <p class="card-text">Fulaninho de tal, tal setor.</p>
-                        <a href="#" class="btn btn-primary">Ver</a>
+                        <h5 class="card-title">Matheus Luna</h5>
+                        <p class="card-text">Desenvolvedor Full Stack.</p>
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#FeedbackModal"
+                        >
+                            Ver
+                        </button>
                     </div>
                   </div>
             </div>
             <div class="col-3">
                 <div class="card">
-                    <img src="./assets/imgs/Perfil-sem-foto.webp" class="card-img-top" alt="...">
+                    <img src="./assets/imgs/Duarte.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Pessoa</h5>
-                        <p class="card-text">Fulaninho de tal, tal setor.</p>
-                        <a href="#" class="btn btn-primary">Ver</a>
+                        <h5 class="card-title">Marcelo Duarte</h5>
+                        <p class="card-text">Desenvolvedor Full Stack</p>
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#FeedbackModal"
+                        >
+                            Ver
+                        </button>
                     </div>
                   </div>
             </div>
-        </div>
-    </div>      <button
-         type="button"
-         class="btn btn-primary"
-         data-bs-toggle="modal"
-         data-bs-target="#exampleModal"
-      >
-         Pessoa hover
-      </button>
-
-      <div
-         class="modal fade"
-         id="exampleModal"
-         tabindex="-1"
-         aria-labelledby="exampleModalLabel"
-         aria-hidden="true"
-      >
-         <div class="modal-dialog modal-lg">
+        </main>
+        <footer class="row py-3 justify-content-between align-items-center">
+            <div class="col-text-center">
+              <p class="text-muted mb-0">&copy; 2024 Feedback de Grupos. Todos os direitos reservados.</p>
+            </div>
+            <div class="col">
+              <a href="https://github.com/joaocmellus/group-feedback" class="text-reset text-decoration-none">Sobre</a>
+              <a href="https://github.com/joaocmellus/group-feedback" class="text-reset text-decoration-none ms-2">Ajuda</a>
+            </div>
+          </footer>
+    </div>
+    <div class="modal fade" id="FeedbackModal" tabindex="-1" aria-labelledby="FeedbackModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
-               <div class="modal-header">
-                  <button
-                     type="button"
-                     class="btn-close"
-                     data-bs-dismiss="modal"
-                     aria-label="Close"
-                  ></button>
-               </div>
-               <div class="modal-body">
-                  <div class="row d-flex">
-                     <div class="col-6 p-2">
-                        <h4 class="fw-bold">Pontos a destacar</h4>
-                        <div>Aqui vão os comentários</div>
-                        <div class="form-floating">
-                           <textarea
-                              class="form-control text-white"
-                              style="background-color: rgb(132, 236, 132)"
-                              placeholder="Leave a comment here"
-                              id="floatingTextarea2"
-                              style="height: 100px"
-                           ></textarea>
-                           <label for="floatingTextarea2">Comentário</label>
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row d-flex">
+                        <div class="col-6 p-2">
+                            <h4 class="fw-bold">Pontos a destacar</h4>
+                            <div>Aqui vão os comentários</div>
+                            <div class="form-floating">
+                                <textarea class="form-control text-white" style="background-color: rgb(132, 236, 132)"
+                                    placeholder="Leave a comment here" id="floatingTextarea2"
+                                    style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">Comentário</label>
+                            </div>
                         </div>
-                     </div>
-                     <div class="col-6 p-2">
-                      <h4 class="fw-bold">Pontos a destacar</h4>
-                      <div>Aqui vão os comentários</div>
-                        <div class="form-floating">
-                           <textarea
-                              class="form-control text-white"
-                              style="background-color: rgb(236, 132, 132)"
-                              placeholder="Leave a comment here"
-                              id="floatingTextarea2"
-                              style="height: 100px"
-                           ></textarea>
-                           <label for="floatingTextarea2">Comentário</label>
+                        <div class="col-6 p-2">
+                            <h4 class="fw-bold">Pontos a destacar</h4>
+                            <div>Aqui vão os comentários</div>
+                            <div class="form-floating">
+                                <textarea class="form-control text-white" style="background-color: rgb(236, 132, 132)"
+                                    placeholder="Leave a comment here" id="floatingTextarea2"
+                                    style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">Comentário</label>
+                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="modal-footer">
-                  <button
-                     type="button"
-                     class="btn btn-secondary"
-                     data-bs-dismiss="modal"
-                  >
-                     Close
-                  </button>
-                  <button type="button" class="btn btn-primary">Avaliar</button>
-               </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                    <button type="button" class="btn btn-primary">Avaliar</button>
+                </div>
             </div>
-         </div>
-      </div>
+        </div>
+    </div>
 
-      <script
-         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-         crossorigin="anonymous"
-      ></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
    </body>
 </html>
